@@ -6,6 +6,7 @@ app.set('port',process.env.PORT||3000)//tome el puerto de mi aplicación en el s
 
 
 //Middlewares(funciones que se ejecuten antes de que lleguen a las rutas)
+app.use(morgan('dev'));
 
 
 app.listen(app.get('port'),()=>{
